@@ -8,44 +8,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
-
-    <title>Login - Blog</title>
+    <title>Posts - Blog</title>
   </head>
   <body>
-    <h1>Login - Blog</h1> <br>
+    <h2>Titulo</h2>
     <form>
   <div class="form-group">
-    <label for="exampleInputEmail1"> <b>E-mail</label></b>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail aqui"> <br>
-    
-  <div class="form-group">
-    <label for="exampleInputPassword1"><b> Senha</label> </b> 
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-  </div> <br>
-
-  <div class="form-check">
- 
- 
+    <label for="formGroupExampleInput"></label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Titulo do Post">
   </div>
-  
-  <a href="post.php" class="btn btn-primary">Acessar Blog</a>
 
-    
-</form>
+  <h3>Descrição</h3>
 
+<div class="form-floating">
+    <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea"></label>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
+<button type="button" class="btn btn-primary">Registrar Post</button>
+        
 
 
 

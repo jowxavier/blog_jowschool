@@ -1,0 +1,10 @@
+- Criar tabela no banco de dados (nome, email e senha) chamado usuarios - ok
+
+- Criar tabela post no banco de dados com ID do usuario, descrição e titulo do post - ok
+
+- Criar tela de login do Blog - ok
+
+- Criar tela onde os usuarios cadastram os posts - ok
+
+- Quando o usuario entrar, irá mostrar apenas os 10 ultimos posts registrado por ele (select limit 10)
+- Ao acessar o blog terá que aparecer todos os posts mostrando o titulo e a descrição
