@@ -1,65 +1,33 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+</head>
 
-    <title>Blog - JOW</title>
-  </head>
-  <body>
-    
-
-    <div class="container">
-            <div class="row">
-            <div class="col">
-                <h1>Cadastro - BLOG</h1>
-
-        <form action="script_cadastro.php" method="POST">
-                <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" name="email">
-                </div>
-                <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="text" class="form-control" name="senha">
-                </div>
-                <div class="form-group">
-                <label for="nome">Nome completo</label>
-                <input type="text" class="form-control" name="nome">
-                </div>
-                <div class="form-group">
-                <label for="post">Novo post</label>
-                <input type="text-area" class="form-control" name="post">
-                </div> <br>
-                <input type="submit" class="btn btn-success">
-                
-                
-        </div>
-    </div>
-    </div>
+<body>
+    <div class="container"><br>
+        <form action="scripts/usuario.php" method="POST">
+            <input type="hidden" name="login" value="1">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" placeholder="jonathanxribeiro@gmail.com">
+            </div>
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" name="senha" class="form-control" placeholder="******">
+            </div><br>
+            <button type="submit" class="btn btn-success">Entrar</button>
         </form>
+    </div>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
 </html>
